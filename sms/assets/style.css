@@ -1,0 +1,21 @@
+:root{--navy:#1e3a8a;--blue:#2563eb;--accent:#f59e0b;--bg:#f3f5f9}
+body{background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.topbar{background:var(--navy);height:56px;position:sticky;top:0;z-index:1030}
+.brand{color:#fff;font-weight:700;font-size:1.2rem}.brand span,.text-accent{color:var(--accent)}
+.avatar{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;align-items:center;justify-content:center;font-weight:600}
+.sidebar{width:210px;background:#fff;min-height:calc(100vh - 56px);padding:.75rem 0;box-shadow:1px 0 4px rgba(0,0,0,.05);transition:width .2s}
+.sidebar a{display:flex;align-items:center;gap:.75rem;padding:.7rem 1.1rem;color:#475569;text-decoration:none;border-left:3px solid transparent}
+.sidebar a i{width:20px;text-align:center}.sidebar a:hover{background:#eef2ff}
+.sidebar a.active{color:var(--navy);background:#e0e7ff;border-left-color:var(--accent);font-weight:600}
+.side-collapsed .sidebar{width:56px}.side-collapsed .sidebar a span{display:none}
+.content{min-width:0}
+.card{border:0;border-radius:12px;box-shadow:0 1px 4px rgba(15,23,42,.08)}
+.welcome{background:linear-gradient(160deg,#fde0b5,#f59e0b);color:#3b2a06}.btn-navy{background:var(--navy);color:#fff;text-align:left}.btn-navy:hover{background:#172554;color:#fff}
+.stat h2{margin:.2rem 0 0;font-weight:700;color:var(--navy)}.stat small{color:#64748b}
+.ico{width:40px;height:40px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-bottom:.4rem}
+.ico.blue{background:#2563eb}.ico.green{background:#16a34a}.ico.orange{background:#f59e0b}.ico.purple{background:#7c3aed}
+.btn-primary{background:var(--blue);border-color:var(--blue)}.table thead th{color:#64748b;font-weight:600;font-size:.82rem;text-transform:uppercase}
+.thumb{width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:8px}
+.login-bg{background:linear-gradient(135deg,#1e3a8a,#2563eb)}.login-card{width:100%;max-width:400px;border-radius:16px}
+@media(max-width:768px){.sidebar{width:56px}.sidebar a span{display:none}.content{padding:1rem!important}}
+@media print{.no-print,.topbar,.sidebar{display:none!important}.card{box-shadow:none}}
